@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
-            $table->string('nom');
+            $table->string('nom',50);
             $table->text('description')->nullable();
             $table->float('prix', 8, 2);
             $table->timestamp('created_at')->useCurrent();

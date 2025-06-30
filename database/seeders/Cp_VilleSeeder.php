@@ -30,10 +30,7 @@ class Cp_VilleSeeder extends Seeder
                 DB::table('cp_villes')->updateOrInsert(
                     ['code_postal' => $data['Code_postal']],
                     [
-                        //'code_commune_insee' => $data['Code_commune_INSEE'],
                         'ville' => $data['Nom_de_la_commune'],
-                        // 'libelle_acheminement' ignoré
-                        //'ligne_5' => $data['Ligne_5'],
                     ]
                 );
             }
