@@ -9,7 +9,7 @@ class Cp_VilleSeeder extends Seeder
 {
     public function run()
     {
-        $csvPath = storage_path('app/codes_postaux.csv');
+        $csvPath = storage_path('app\codes_postaux.csv');
 
         if (!file_exists($csvPath)) {
             $this->command->error("Fichier CSV introuvable: $csvPath");
