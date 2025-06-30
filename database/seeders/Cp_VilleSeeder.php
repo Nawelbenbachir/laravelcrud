@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class CodesPostauxSeeder extends Seeder
+class Cp_VilleSeeder extends Seeder
 {
     public function run()
     {
