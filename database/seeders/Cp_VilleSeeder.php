@@ -31,7 +31,7 @@ class Cp_VilleSeeder extends Seeder
                     ['code_postal' => $data['Code_postal']],
                     [
                         //'code_commune_insee' => $data['Code_commune_INSEE'],
-                        'nom_commune' => $data['Nom_de_la_commune'],
+                        'ville' => $data['Nom_de_la_commune'],
                         // 'libelle_acheminement' ignoré
                         //'ligne_5' => $data['Ligne_5'],
                     ]
