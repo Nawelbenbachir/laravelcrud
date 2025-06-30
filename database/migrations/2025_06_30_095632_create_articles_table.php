@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('nom');
             $table->text('description')->nullable();
             $table->float('prix', 8, 2);
-            $table->timestamp()->useCurrent();
-            $table->timestamp()->useCurrent()->useCurrentonUpdate();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentonUpdate();
         });
     }
 
