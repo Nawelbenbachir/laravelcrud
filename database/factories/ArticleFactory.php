@@ -8,7 +8,7 @@ use App\Models\Article;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
  */
-class ArticlesFactory extends Factory
+class ArticleFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,7 +18,7 @@ class ArticlesFactory extends Factory
     public function definition(): array
     {
         return [
-            'nom'=>fake()->text(),
+            'nom' => fake()->words(2, true),
             'description'=>fake()->optional()->paragraph(),
             'prix'=>fake()->randomFloat(2, 1, 1000),
         ];
