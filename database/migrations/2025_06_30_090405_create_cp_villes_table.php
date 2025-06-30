@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('cp_villes', function (Blueprint $table) {
             $table->id();
-            $table->string('code_postal')->unique();
-            $table->string('ville');
+            $table->string('code_postal',10);
+            $table->string('ville',100);
+            $table->unique(['code_postal', 'ville']);
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
