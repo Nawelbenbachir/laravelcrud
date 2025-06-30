@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('code_postal')->unique();
             $table->string('ville');
             $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->onUpdateCurrent();
         });
     }
 
