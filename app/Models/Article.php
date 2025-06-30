@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Cp_Ville extends Model
+class Article extends Model
 {
-    protected $table = 'cp_villes';
+    //
 }
